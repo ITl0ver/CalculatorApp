@@ -1,0 +1,242 @@
+* {
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Space Mono', monospace;
+   background: #C5E4E7;
+   height: 100vh;
+ }
+ 
+ header {
+   display: flex;
+   height: 144px;
+ }
+ 
+ header img {
+   margin: auto;
+ }
+ 
+ .cont {
+   background: #FFFFFF;
+   padding: 28px;
+   height: 789px;
+   border-radius: 25px 25px 0 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ 
+ .contfirst {
+   height: 416px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+ .inputField h1,
+ .inputField h3 {
+   height: 24px;
+   font-size: 16px;
+   color: #5E7A7D;
+ }
+ 
+ input {
+   width: 100%;
+   height: 48px;
+   box-sizing: border-box;
+   border: none;
+   text-align: right;
+   font-size: 24px;
+   font-weight: 700;
+   color: #00474B;
+ }
+ 
+ .first {
+   background: url(./images/icon-dollar.svg) no-repeat 10px 50%;
+   background-color: #F3F9FA;
+ }
+ 
+ .dataInput {
+   height: 216px;
+ }
+ 
+ .dataInput h2 {
+   font-size: 16px;
+   line-height: 23.7px;
+   color: #5E7A7D;
+ }
+ 
+ .dataInputSection {
+   margin-top: 14px;
+   height: 176px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ 
+ .dataInputSection button {
+   width: 146.63px;
+   height: 48px;
+   background-color: #00474B;
+   color: #FFFFFF;
+   font-size: 24px;
+   border-radius: 5px;
+ }
+ 
+ .dataInputSection button:hover {
+   cursor: pointer;
+   background: #9FE8DF;
+ }
+ 
+ .dataInputSection button.active {
+   background: #26C2AE;
+ }
+ 
+ input[placeholder="Custom"] {
+   width: 146.63px;
+   text-align: center;
+ }
+ 
+ .numOfPeople {
+   height: 78px;
+ }
+
+ .numOfPeople span{
+   color:#FFFFFF
+ }
+ 
+ .second {
+   background: url(./images/icon-person.svg) no-repeat 10px 50%;
+   background-color: #F3F9FA;
+ }
+ 
+ .calcSection {
+   height: 257px;
+   background-color: #00474B;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   border-radius: 10px;
+ }
+ 
+ .lastSection {
+   width: 100%;
+   height: 116px;
+   padding: 0 23px 0 23px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+ }
+ 
+ .div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .lastSection p {
+   font-size: 13px;
+   color: #7F9D9F;
+ }
+ 
+ .div span {
+   font-size: 32px;
+   color: #26C2AE;
+ }
+ 
+ .lastSection h4 {
+   /* height: 48px; */
+   font-size: 16px;
+   color: #FFFFFF;
+ }
+ 
+ .res {
+   width: 281px;
+   height: 48px;
+   background-color: #26C2AE;
+   border-radius: 5px;
+ }
+ 
+ /* responsive design */
+ 
+ @media screen and (min-width: 1024px) {
+   body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+ 
+   .contfirst {
+     width: 379px;
+     height: 388px;
+   }
+ 
+   header {
+     display: block;
+   }
+ 
+   .cont {
+     width: 920px;
+     height: 481px;
+     flex-direction: row;
+     border-radius: 25px;
+   }
+ 
+   .calcSection {
+     width: 413px;
+     height: 417px;
+     justify-content: space-around;
+   }
+ 
+   .dataInput {
+     height: 152px;
+   }
+ 
+   .dataInputSection {
+     height: 112px;
+     flex-flow: wrap;
+   }
+ 
+   .dataInputSection button {
+     width: 117px;
+     height: 48px;
+   }
+ 
+   .numOfPeople h3 {
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .numOfPeople span {
+     display: block;
+     font-size: 16px;
+     color: #E17457;
+   }
+ 
+   input[placeholder="Custom"] {
+     width: 118px;
+   }
+ 
+   .lastSection {
+      display: block;
+      width: auto;
+      position: static;
+      height: 116px;
+      padding: 0;
+   }
+ 
+   .div {
+     width: 333px;
+     height: 71px;
+   }
+  
+   .div span{
+      font-size: 48px;
+   }
+   .res {
+     width: 333px;
+   }
+ }
