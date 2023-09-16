@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/afrodite.jpg">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <title>CalculatorApp</title>
-</head>
-<body>
-  <header>
-    <img src="./images/logo.svg" alt="photo Slitter">
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/afrodite.jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CalculatorApp</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="photo Slitter">
+    </header>
 
-  <div class="cont">
-    <div class="contfirst">
-      <div class="bill inputField">
-        <h1>Bill</h1>
-        <input type="number" id="bill" placeholder="0" class="first">
+    <div class="cont">
+      <div class="contfirst">
+        <div class="bill inputField">
+          <h1>Bill</h1>
+          <input type="number" id="bill" placeholder="0" class="first">
+        </div>
+        <div class="dataInput">
+          <h2>Select Tip %</h2>
+          <section class="dataInputSection">
+            <button onclick="percent(5)">5%</button>
+            <button onclick="percent(10)">10%</button>
+            <button onclick="percent(15)">15%</button>
+            <button onclick="percent(25)">25%</button>
+            <button onclick="percent(50)">50%</button>
+            <input type="number" id="customInput" placeholder="Custom">
+          </section>
+        </div>
+        <div class="numOfPeople inputField">
+          <h3>Number of People <span id="message">Can't be zero</span></h3>
+          <input type="number" id="numOfPeople" placeholder="0" class="second">
+        </div>
       </div>
-      <div class="dataInput">
-        <h2>Select Tip %</h2>
-        <section class="dataInputSection">
-          <button onclick="percent(5)">5%</button>
-          <button onclick="percent(10)">10%</button>
-          <button onclick="percent(15)">15%</button>
-          <button onclick="percent(25)">25%</button>
-          <button onclick="percent(50)">50%</button>
-          <input type="number" id="customInput" placeholder="Custom">
-        </section>
-      </div>
-      <div class="numOfPeople inputField">
-        <h3>Number of People  <span id="message">Can't be zero</span></h3>
-        <input type="number" id="numOfPeople" placeholder="0" class="second">
+      <div class="calcSection">
+        <div class="lastSection">
+          <div class="div">
+            <h4>Tip Amount
+              <p>/ person</p></h4>
+            <span id="tipAmountValue"></span>
+          </div>
+          <div class="div">
+            <h4>Total
+              <p>/ person</p></h4>
+            <span id="totalAmountValue"></span>
+          </div>
+        </div>
+        <button type="button" id="reset" class="res">RESET</button>
       </div>
     </div>
-    <div class="calcSection">
-      <div class="lastSection">
-        <div class="div">
-          <h4>Tip Amount 
-          <p>/ person</p></h4>
-          <span id="tipAmountValue"></span>
-        </div>
-        <div class="div">
-          <h4>Total
-          <p>/ person</p></h4>
-          <span id="totalAmountValue"></span>
-        </div>
-      </div>
-      <button type="button" id="reset" class="res">RESET</button>
-    </div> 
-  </div>
-  
-  <script src="calc.js"></script>
-</body>
+
+    <script src="calc.js"></script>
+  </body>
 </html>
