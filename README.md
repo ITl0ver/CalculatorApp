@@ -11,7 +11,7 @@
 </p> 
 
   
-<p align="center" style="color: blue;" To open SPLITTER>
+To open SPLITTER
 
   <a href="https://itl0ver.github.io/CalculatorApp/" target="_blank">
   <img title="Visit Site SPLITTER" alt="site icon" width="150px" src="./images/klick here.jpg" />
